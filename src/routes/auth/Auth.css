@@ -1,0 +1,26 @@
+.auth_form{
+    max-width: 450px !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #ffffffcd;
+    border-radius: 10px;
+}
+
+.ant-form-item-control{
+    max-width: 100%;
+}
+
+.ant-form-item-control-input-content button{
+    width: 100%;
+    font-size: 20px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.register_form{
+    max-width: 600px !important;
+}
+
+
