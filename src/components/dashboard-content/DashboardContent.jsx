@@ -52,7 +52,9 @@ const DashboardContent = ({ title, data, loading }) => {
         try {
             const res = await axios.put(`/products/${updateProduct.id}`, values)
             toast.success("Product Updated")
-            location.reload()
+            if(res.data){
+                location.reload()
+            }
         } catch (error) {
             console.log(error)
 
@@ -68,7 +70,9 @@ const DashboardContent = ({ title, data, loading }) => {
             axios.post(`/products/`, values)
             console.log(values)
             toast.success("Product Added")
-            location.reload()
+            if(res.data){
+                location.reload()
+            }
         } catch (error) {
             console.log(error)
         }
